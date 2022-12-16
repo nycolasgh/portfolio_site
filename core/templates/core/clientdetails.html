@@ -1,0 +1,42 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="client-details-container">
+
+    <div>
+        <h3>Clientes</h3>
+
+        {% for client in clientes %}
+            <div>
+                <a href="{% url 'client-details' client.id %}">{{ client.name }}</a>
+            </div>
+        {% endfor %}
+
+    </div>
+
+    <div>
+        <div>
+            <img src="{{ client.image }}" alt="client image">
+            <h2>{{ cliente.name }}</h2>
+            <p>{{ cliente.description }}</p>
+        </div>
+
+        <div>
+            <div>
+                {% for job in jobs  %}
+                    <h3>{{ job.title }}</h3>
+                    <h4>{{ job.description }}</h4>
+
+                    <img src="{{ job.image }}" alt="job image">
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

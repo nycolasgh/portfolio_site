@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <h2>Tem certeza que deseja deletar esse feedback?</h2>
+    <input type="submit" value="Sim, deletar!">
+    <a href="{{request.META.HTTP_REFERER}}">Voltar</a> <!– serve para fazer o usuário voltar para a página que estava anteriormente, sem o uso da url –>
+</form>
+
+{% endblock %}

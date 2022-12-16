@@ -1,0 +1,49 @@
+.button {
+    text-transform: lowercase;
+    font-weight: 500;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border-radius: 50px;
+}
+
+.btn-theme-pink {
+    background-color: var(--secondary-pink);
+    border-color: var(--secondary-pink);
+}
+
+.btn-theme-pink:hover {
+    background-color: var(--secondary-dark-pink);
+    border-color: var(--secondary-dark-pink);
+}
+
+.btn-outline-theme-pink {
+    border-color: var(--secondary-pink);
+    color: var(--secondary-pink);
+}
+
+.btn-outline-theme-pink:hover {
+    background-color: var(--secondary-dark-pink);
+    border-color: var(--secondary-dark-pink);
+    color: white;
+}
+
+.service-accord {
+    margin: 0.3rem;
+    width: 80vw;
+    border-radius: 0.5rem;
+}
+
+.btn-theme-aquamarine {
+    background-color: var(--details-aquamarine);
+    border-color: var(--details-aquamarine);
+    width: 30vw;
+    align-self: center;
+    margin-top: 0.5rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-theme-aquamarine:hover {
+    background-color: var(--secondary-pink);
+    border-color: var(--secondary-pink);
+    box-shadow: none;
+}

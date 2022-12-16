@@ -1,0 +1,148 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<div id="bg-container">
+    {# Slider section #}
+
+    <div class="slider" style="background-image: url('{% static 'images/alto-site-slider-background.svg' %}');">
+        <div id="slider-text">
+            <h1>Juntos vamos mais longe,<br>Juntos voamos mais <span>Alto!</span></h1>
+            <h3 class="mb-4">Chegou a hora de elevar<br>o nível do seu negócio!</h3>
+            <div id="slider-btn" class="d-flex flex-column">
+                <a href="#about" class="btn btn-primary button btn-theme-pink my-1">Saiba mais</a>
+                <a href="#contact" class="btn btn-outline-primary button btn-outline-theme-pink my-1">Entre em contato!</a>
+            </div>
+        </div>
+
+        <div id="slider-image">
+                <img src="{% static 'images/rocket_site_alto.png' %}">
+        </div>
+
+    </div>
+
+    {# About section #}
+
+    <div id="about">
+        <div id="about-image">
+            <img src="{% static 'images/about-us-astronaut.svg' %}">
+        </div>
+
+        <div id="about-text">
+            <h3>Sobre nós</h3>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat blandit mi vitae rhoncus.</h4>
+            <p>Vestibulum velit nibh, aliquam quis sapien nec, faucibus feugiat nulla. Etiam non tincidunt libero. Etiam iaculis nisi eu ligula consectetur viverra. Donec et erat vitae nibh sagittis vulputate eget vel quam. Curabitur sed est at metus mollis laoreet. Quisque ac vulputate sapien. Ut quis iaculis leo.</p>
+        </div>
+    </div>
+
+</div>
+
+{# Services Section #}
+
+<div id="service-section">
+    <h2>Nossos Serviços</h2>
+
+        <div id="services">
+            {% for service in service %}
+                <div class="accordion service-accord">
+                    <div class="accordion-item">
+                            <h3 class="accordion-header service-header">
+                                <button class="accordion-button collapsed service-header" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.counter }}" aria-expanded="false" aria-controls="collapse{{ forloop.counter }}">
+                                    {{ service.name }}
+                                </button>
+                            </h3>
+                        <div id="collapse{{ forloop.counter }}" class="accordion-collapse collapse" aria-labelledby="heading{{ forloop.counter }}" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>{{ service.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+
+</div>
+
+{# Clients Section #}
+<div id="clients">
+
+    <h2>Nossos Clientes</h2>
+    <div id="clients-list">
+
+        {% for client in clients %}
+
+            <div class="client-item">
+
+                <a href="{% url 'client-details' client.id %}">
+                    <img src="{{ client.image.url }}">
+                </a>
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+</div>
+
+{#  Feedback section  #}
+<h2 id="feedbacks">Feedbacks</h2>
+<div id="carouselExampleIndicators" class="carousel carousel-dark slide my-3" data-bs-ride="true">
+  <div class="carousel-inner">
+      {% for fdbk in feedbacks %}
+
+            <div class="carousel-item {% if forloop.first %} active {% endif %} feedback">
+                <div>
+                    <h3>{{ fdbk.clientname }}</h3>
+                    <h4>{{ fdbk.companyname }}</h4>
+                </div>
+                <p>{{ fdbk.feedback }}</p>
+
+                {% if request.user == fdbk.user %}
+                <a href="{% url 'update-feedback' fdbk.id %}">Editar</a>
+                <a href="{% url 'delete-feedback' fdbk.id %}">Deletar</a>
+                {% endif %}
+            </div>
+      {% endfor %}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+{#  Contact section  #}
+
+<div id="convite-contato">
+    <h3>Quer elevar o nível da sua empresa?</h3>
+    <p>Vamos marcar uma conversa para entender melhor seu negócio!</p>
+    <a href="#contact" class="btn btn-primary button btn-theme-aquamarine">Bora!</a>
+</div>
+
+{#  Recent Works Section  #}
+<div id="works">
+    <div id="trabalhos-recentes">
+    <h2>Trabalhos Recentes</h2>
+    </div>
+    <div class="wrapper">
+        <div id="works-list">
+        {% for work in works %}
+            <div class="work-item">
+                    <img src="{{ work.image.url }}" alt="work image">
+                    <div class="overlay">
+                        <h4>{{ work.title }}</h4>
+                    </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
