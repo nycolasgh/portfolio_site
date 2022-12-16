@@ -39,11 +39,15 @@
     width: 30vw;
     align-self: center;
     margin-top: 0.5rem;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    transition: all ease-out 0.2s;
+
 }
 
 .btn-theme-aquamarine:hover {
     background-color: var(--secondary-pink);
     border-color: var(--secondary-pink);
     box-shadow: none;
+    transform: scale(1);
 }
