@@ -16,6 +16,6 @@ DATABASES = {
     'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
 }
 
-CSRF_TRUSTED_ORIGINS = ["https://web-production-1c31.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://web-production-b50e.up.railway.app"]
 
 
