@@ -313,9 +313,9 @@ html {
     background: linear-gradient(145deg, rgba(99,17,225,1) 0%, rgba(214,29,224,1) 83%, rgba(7,224,179,1) 100%);
     align-items: center;
     justify-content: center;
-    height: 35vh;
-    margin: 2rem;
-    padding: 2rem;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
     border-radius: 2rem;
 }
 
