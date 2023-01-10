@@ -20,7 +20,6 @@
 
     .slider #slider-image {
         transform: scale(0.8);
-        right: 3rem;
         border: solid red;
     }
 
