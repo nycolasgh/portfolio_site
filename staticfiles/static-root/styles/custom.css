@@ -84,6 +84,7 @@ html {
     min-width: auto;
     max-height: 50vh;
     position: relative;
+    right: 6rem;
     z-index: 0;
 }
 
