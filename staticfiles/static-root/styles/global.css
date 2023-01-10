@@ -36,11 +36,11 @@
 .btn-theme-aquamarine {
     background-color: var(--details-aquamarine);
     border-color: var(--details-aquamarine);
-    width: 30vw;
+    width: auto;
     align-self: center;
     margin-top: 0.5rem;
     box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+    transform: scale(1.00);
     transition: all ease-out 0.2s;
 
 }
@@ -49,5 +49,5 @@
     background-color: var(--secondary-pink);
     border-color: var(--secondary-pink);
     box-shadow: none;
-    transform: scale(1);
+    transform: scale(0.95);
 }

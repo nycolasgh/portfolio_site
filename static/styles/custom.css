@@ -162,7 +162,7 @@ html {
     margin: 1rem;
     color: var(--primary-purple);
     text-align: center;
-    width: 100%;
+    width: auto;
 
 
 
@@ -172,7 +172,7 @@ html {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    width: 90vw;
+    width: 95vw;
 }
 
 .client-item {
@@ -315,6 +315,7 @@ html {
     justify-content: center;
     height: 35vh;
     margin: 2rem;
+    padding: 2rem;
     border-radius: 2rem;
 }
 
@@ -400,3 +401,4 @@ footer {
 #footer-social h3 {
    font-size: 1rem;
    font-weight: 700;
+}
