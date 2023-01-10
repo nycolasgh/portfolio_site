@@ -44,14 +44,14 @@ html {
         width: 100%;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 }
 
 .slider #slider-text {
     position: relative;
-    top: 1rem;
-    left: 5rem;
+    top: 2rem;
+    left: 2rem;
     z-index: 1;
 }
 
@@ -80,6 +80,7 @@ html {
 }
 
 .slider #slider-image {
+    margin-right: 3rem;
     z-index: 0;
 
 }
@@ -315,7 +316,7 @@ html {
     justify-content: center;
     height: auto;
     margin: 1rem;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 2rem;
 }
 
@@ -331,6 +332,12 @@ html {
     color: white;
     text-align: center;
     width: 60%;
+}
+
+#convite-contato a {
+    text-align: center;
+    width: 40%;
+
 }
 
 #feedbacks {
