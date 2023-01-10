@@ -50,8 +50,8 @@ html {
 
 .slider #slider-text {
     position: relative;
-    top: 2rem;
-    left: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
     z-index: 1;
 }
 
@@ -87,7 +87,7 @@ html {
 
 .slider #slider-image img{
     object-fit: contain;
-    min-width: 30vw;
+    min-width: auto;
     max-height: 50vh;
 }
 
