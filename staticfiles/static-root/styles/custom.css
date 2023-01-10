@@ -49,7 +49,7 @@ html {
 }
 
 .slider #slider-text {
-    position: relative;
+    position: static;
     margin-left: 2rem;
     margin-top: 2rem;
     z-index: 1;

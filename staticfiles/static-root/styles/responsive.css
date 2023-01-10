@@ -17,12 +17,13 @@
 }
 
 @media screen and (max-width: 640px) {
+    .slider #slider-image {
+        transform: scale(0.8);
+        border: solid red;
+    }
+
     #clients #clients-list .client-item {
         width: 40vw;
     }
 
-    .slider #slider-image {
-        transform: scale(0.8);
-
-    }
 }
