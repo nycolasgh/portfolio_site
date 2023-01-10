@@ -41,7 +41,7 @@ html {
         background-position: center;
         background-repeat: no-repeat;
         height: 65vh;
-        width: 100%;
+        width: auto;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -79,17 +79,14 @@ html {
     max-width: 30vw;
 }
 
+
 .slider #slider-image {
-    position: relative;
-    margin-right: 3rem;
-    z-index: 0;
-
-}
-
-.slider #slider-image img{
     object-fit: contain;
     min-width: auto;
     max-height: 50vh;
+    position: relative;
+    margin-right: 3rem;
+    z-index: 0;
 }
 
 #about {
