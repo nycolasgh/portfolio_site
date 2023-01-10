@@ -44,7 +44,7 @@ html {
         width: auto;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 }
 
@@ -84,7 +84,7 @@ html {
     min-width: auto;
     max-height: 50vh;
     position: relative;
-    right: 3rem;
+    right: 5rem;
     z-index: 0;
 }
 

@@ -17,9 +17,10 @@
 }
 
 @media screen and (max-width: 640px) {
+
     .slider #slider-image {
         transform: scale(0.8);
-        border: solid red;
+        right: 3rem;
     }
 
     #clients #clients-list .client-item {
