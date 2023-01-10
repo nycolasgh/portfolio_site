@@ -50,8 +50,8 @@ html {
 
 .slider #slider-text {
     position: relative;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    left: 2rem;
+    top: 2rem;
     z-index: 1;
 }
 
