@@ -85,7 +85,7 @@ html {
     min-width: auto;
     max-height: 50vh;
     position: relative;
-    margin-right: 3rem;
+    right: 3rem;
     z-index: 0;
 }
 
