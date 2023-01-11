@@ -27,6 +27,12 @@
         transform: scale(0.7);
     }
 
+    .slider #slider-text {
+        position: relative;
+        left: 4rem;
+        z-index: 1;
+    }
+
     #clients #clients-list .client-item {
         width: 40vw;
     }
