@@ -24,6 +24,7 @@
         position: relative;
         right: 5rem;
         z-index: 0;
+        transform: scale(0.7);
     }
 
     #clients #clients-list .client-item {
