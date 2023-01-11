@@ -46,11 +46,11 @@ html {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        padding: 3rem;
 }
 
 .slider #slider-text {
     position: relative;
+    left: 3rem;
     z-index: 1;
 }
 
@@ -322,13 +322,13 @@ html {
     font-weight: 700;
     color: white;
     text-align: center;
-    width: 90%;
+    width: 80%;
 }
 
 #convite-contato p {
     color: white;
     text-align: center;
-    width: 80%;
+    width: 60%;
 }
 
 #convite-contato a {
