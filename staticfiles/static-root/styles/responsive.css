@@ -22,7 +22,7 @@
         min-width: auto;
         max-height: 50vh;
         position: relative;
-        right: 5rem;
+        right: 3rem;
         z-index: 0;
         transform: scale(0.7);
     }
