@@ -20,6 +20,8 @@
 
     .slider #slider-image {
         transform: scale(0.8);
+        right: 5rem;
+        border: solid red;
     }
 
     #clients #clients-list .client-item {
