@@ -258,7 +258,7 @@ html {
     break-inside: avoid; /* IE 10+ */
     background: white;
     transition: all ease-out 0.2s;
-    max-width: 45vw;
+    width: 100%;
 
 }
 
