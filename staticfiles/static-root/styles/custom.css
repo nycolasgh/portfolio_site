@@ -256,6 +256,7 @@ html {
     break-inside: avoid-column;
     background: white;
     transition: all ease-out 0.2s;
+    max-width: 45vw;
 
 }
 
