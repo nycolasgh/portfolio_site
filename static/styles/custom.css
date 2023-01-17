@@ -93,7 +93,7 @@ html {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: top;
-    min-height: 40vh;
+    min-height: 30vh;
     padding: 3rem;
 
 
@@ -104,7 +104,7 @@ html {
 }
 
 #about-title {
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
 
 #about-title h3 {
@@ -118,7 +118,6 @@ html {
     font-size: 1rem;
     color: var(--secondary-pink);
     padding-bottom: 1rem;
-    width: 50vw;
 }
 
 #service-section {
@@ -217,7 +216,7 @@ html {
     justify-content: center;
     background: rgba(0, 0, 0, 0.05);
     padding-bottom: 2rem;
-    width: 100%;
+    width: 100vw;
 
 }
 
@@ -284,7 +283,7 @@ html {
 
 .work-item img {
     max-width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .work-item h4 {
