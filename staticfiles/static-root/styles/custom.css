@@ -104,7 +104,7 @@ html {
 }
 
 #about-title {
-    padding-left: 1rem;
+    padding-left: 3rem;
 }
 
 #about-title h3 {
@@ -115,7 +115,7 @@ html {
 
 #about-title h4 {
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--secondary-pink);
     padding-bottom: 1rem;
     width: 50vw;
@@ -217,7 +217,6 @@ html {
     justify-content: center;
     background: rgba(0, 0, 0, 0.05);
     padding-bottom: 2rem;
-    width: 100vw;
 
 }
 
@@ -225,7 +224,7 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-
+    width: 100%;
 }
 
 #trabalhos-recentes h2{
@@ -239,8 +238,6 @@ html {
 #works-list {
     column-count: 2;
     column-gap: 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
     transition: all ease-out 0.2s;
     width: 95vw;
 }
@@ -255,6 +252,7 @@ html {
     position: relative;
     border-radius: 1rem;
     height: auto;
+    margin-bottom: 1rem;
     break-inside: avoid-column;
     background: white;
     transition: all ease-out 0.2s;
@@ -272,7 +270,7 @@ html {
   opacity: 0;
   transition: .5s ease;
   background: linear-gradient(145deg, rgba(99,17,225,0.8) 0%, rgba(214,29,224,0.8) 83%, rgba(7,224,179,0.8) 100%);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 .work-item:hover {
@@ -290,7 +288,7 @@ html {
 
 .work-item h4 {
   color: white;
-  font-size: 0.5rem;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
