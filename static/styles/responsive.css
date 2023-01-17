@@ -33,6 +33,11 @@
         z-index: 1;
     }
 
+    #about-title p {
+        display: none;
+
+    }
+
     #clients #clients-list .client-item {
         width: 40vw;
     }

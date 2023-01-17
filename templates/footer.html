@@ -22,7 +22,9 @@
 
         <br>
 
+        {% if request.user.is_authenticated %}
         <a href="{% url 'feedback' %}" class="btn btn-primary button btn-theme-aquamarine my-3">Deixe seu Feedback</a>
+        {% endif %}
 
     </div>
 </footer>

@@ -75,7 +75,7 @@ def home(request):
     feedbacks = Feedbacks.objects.all()
     context = {'clients': clientes,
                'works': trabalhos,
-               'service': servicos,
+               'services': servicos,
                'feedbacks': feedbacks}
     return render(request, 'core/home.html', context)
 

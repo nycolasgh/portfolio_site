@@ -38,7 +38,7 @@
     border-color: var(--details-aquamarine);
     width: auto;
     margin-top: 0.5rem;
-    box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.15);
     transform: scale(1.00);
     transition: all ease-out 0.2s;
 

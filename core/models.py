@@ -33,6 +33,7 @@ class RecentWork(models.Model):
     client = models.ForeignKey('Client', on_delete=models.SET_NULL, null=True)
     category = models.ManyToManyField('Service', blank=True, related_name='Services')
     image = models.ImageField(upload_to="works")
+    link = models.TextField(verbose_name="Behance URL", blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

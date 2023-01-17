@@ -25,7 +25,7 @@
             <img src="{% static 'images/about-us-astronaut.svg' %}">
         </div>
 
-        <div id="about-text">
+        <div id="about-title">
             <h3>Sobre nós</h3>
             <h4>Trabalhamos com paixão e determinação para entregar resultados excepcionais para nossos clientes.</h4>
             <p>Somos uma agência de comunicação com uma equipe altamente qualificada e experiente, especializada em ajudar as empresas a alcançar seus objetivos de negócios através da comunicação estratégica. Acreditamos em construir relacionamentos duradouros com nossos clientes e em trabalhar juntos para alcançar seus objetivos.
@@ -42,7 +42,7 @@
     <h2>Nossos Serviços</h2>
 
         <div id="services">
-            {% for service in service %}
+            {% for service in services %}
                 <div class="accordion service-accord">
                     <div class="accordion-item">
                             <h3 class="accordion-header service-header">
@@ -131,10 +131,12 @@
         <div id="works-list">
         {% for work in works %}
             <div class="work-item">
+                <a href="{{ work.link }}" target="_blank">
                     <img src="{{ work.image.url }}" alt="work image">
                     <div class="overlay">
                         <h4>{{ work.title }}</h4>
                     </div>
+                </a>
             </div>
         {% endfor %}
         </div>
