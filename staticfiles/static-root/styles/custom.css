@@ -216,7 +216,7 @@ html {
     justify-content: center;
     background: rgba(0, 0, 0, 0.05);
     padding-bottom: 2rem;
-    width: 100vw;
+    width: auto;
 
 }
 
@@ -224,6 +224,7 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 95%;
 
 }
 
@@ -239,7 +240,7 @@ html {
     column-count: 2;
     column-gap: 0.5rem;
     transition: all ease-out 0.2s;
-    width: 90vw;
+    width: 95%;
 }
 
 .wrapper {
@@ -251,6 +252,7 @@ html {
     display: inline-block;
     position: relative;
     border-radius: 1rem;
+    width: 45%;
     height: auto;
     margin-bottom: 0.5rem;
     break-inside: avoid-column;
