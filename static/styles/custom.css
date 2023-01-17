@@ -224,7 +224,6 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 95%;
 
 }
 
@@ -240,12 +239,12 @@ html {
     column-count: 2;
     column-gap: 0.5rem;
     transition: all ease-out 0.2s;
-    width: 95%;
 }
 
 .wrapper {
     height: 90vh;
     overflow: auto;
+    width: 90vw;
 }
 
 .work-item {
