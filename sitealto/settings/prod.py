@@ -4,7 +4,7 @@ import dj_database_url
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://portfoliosite-production.up.railway.app']
+ALLOWED_HOSTS = ['portfoliosite-production.up.railway.app']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -25,7 +25,7 @@ CSRF_TRUSTED_ORIGINS = ["https://portfoliosite-production.up.railway.app"]
 
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 
 # HSTS settings
 SECURE_HSTS_SECONDS = 31536000  # 1 year in seconds
