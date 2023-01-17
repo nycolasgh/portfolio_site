@@ -252,7 +252,6 @@ html {
     display: inline-block;
     position: relative;
     border-radius: 1rem;
-    width: 45%;
     height: auto;
     margin-bottom: 0.5rem;
     break-inside: avoid-column;
