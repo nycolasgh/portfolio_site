@@ -217,7 +217,7 @@ html {
     justify-content: center;
     background: rgba(0, 0, 0, 0.05);
     padding-bottom: 2rem;
-    width: 100vw;
+    width: 100%;
 
 }
 
@@ -289,7 +289,7 @@ html {
 
 .work-item h4 {
   color: white;
-  font-size: 20px;
+  font-size: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
