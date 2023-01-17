@@ -217,6 +217,7 @@ html {
     justify-content: center;
     background: rgba(0, 0, 0, 0.05);
     padding-bottom: 2rem;
+    width: 100vw;
 
 }
 
@@ -224,7 +225,7 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 100%;
+
 }
 
 #trabalhos-recentes h2{
@@ -239,7 +240,7 @@ html {
     column-count: 2;
     column-gap: 0.5rem;
     transition: all ease-out 0.2s;
-    width: 95vw;
+    width: 90vw;
 }
 
 .wrapper {
@@ -252,7 +253,7 @@ html {
     position: relative;
     border-radius: 1rem;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     break-inside: avoid-column;
     background: white;
     transition: all ease-out 0.2s;
