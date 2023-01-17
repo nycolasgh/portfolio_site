@@ -25,8 +25,7 @@ def loginPage(request):
         return redirect('home')
 
     if request.method == 'POST':  # Se o método da requisição for post
-        username = request.POST.get(
-            'username')  # vamos atribuir a uma variável o valor da requisição com name igual a "username"
+        username = request.POST.get('username')  # vamos atribuir a uma variável o valor da requisição com name igual a "username"
         password = request.POST.get('password')  # mesma coisa com a senha
 
         try:
