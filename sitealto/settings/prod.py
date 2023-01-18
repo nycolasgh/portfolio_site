@@ -4,7 +4,7 @@ import dj_database_url
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['portfoliosite-production.up.railway.app']
+ALLOWED_HOSTS = ['portfoliosite-production.up.railway.app','www.altoag.com.br','altoag.com.br']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
