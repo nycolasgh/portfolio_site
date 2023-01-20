@@ -19,7 +19,7 @@ CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.getenv("CLOUDINARY_URL"),
 }
 
-CSRF_TRUSTED_ORIGINS = ["https://portfoliosite-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://portfoliosite-production.up.railway.app","https://www.altoag.com.br"]
 
 # HTTPS settings
 
