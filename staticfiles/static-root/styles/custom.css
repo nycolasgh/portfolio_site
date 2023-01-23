@@ -248,7 +248,7 @@ html {
 }
 
 .work-item {
-    display: inline-block;
+    display: -webkit-inline-box;
     position: relative;
     border-radius: 1rem;
     height: auto;
@@ -397,9 +397,4 @@ footer {
 #footer-social {
    margin: 2rem;
    color: white;
-}
-
-#footer-social h3 {
-   font-size: 1rem;
-   font-weight: 700;
 }
