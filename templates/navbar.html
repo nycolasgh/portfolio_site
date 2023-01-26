@@ -2,36 +2,36 @@
 
     <div id="header">
         <div class="container-fluid">
-   <nav class="navbar navbar-dark navbar-expand-lg justify-content-between">
-    <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static 'images/alto-logo-site.svg' %}" width="150" height="auto" alt="" class="img-fluid ps-3"/>
-    </a>
+           <nav class="navbar navbar-dark navbar-expand-lg justify-content-between">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'images/alto-logo-site.svg' %}" width="150" height="auto" alt="" class="img-fluid ps-3"/>
+                </a>
+                    <button class="navbar-toggler custom-toggler ms-auto me-3 my-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav align-items-start ms-2">
-            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-            <a class="nav-link" href="{% url 'home' %}#about">Sobre Nós</a>
-            <a class="nav-link" href="{% url 'home' %}#service-section">Serviços</a>
-            <a class="nav-link" href="{% url 'home' %}#works">Portfolio</a>
-            <a class="nav-link" href="{% url 'home' %}#clients">Clientes</a>
-            <a class="nav-link" href="{% url 'home' %}#convite-contato">Contato</a>
-                {% if request.user.is_authenticated %}
-                    <a class="nav-link" href="{% url 'profile' user.id %}">Ver Perfil</a>
-                    <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'logout' %}">Logout</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                      <div class="navbar-nav align-items-start ms-2">
+                            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                            <a class="nav-link" href="{% url 'home' %}#about">Sobre Nós</a>
+                            <a class="nav-link" href="{% url 'home' %}#service-section">Serviços</a>
+                            <a class="nav-link" href="{% url 'home' %}#works">Portfolio</a>
+                            <a class="nav-link" href="{% url 'home' %}#clients">Clientes</a>
+                            <a class="nav-link" href="{% url 'home' %}#convite-contato">Contato</a>
+                            {% if request.user.is_authenticated %}
+                                <a class="nav-link" href="{% url 'profile' user.id %}">Ver Perfil</a>
+                                <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'logout' %}">Logout</a>
 
-                {% else %}
-                    <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'login' %}">Login</a>
-                {% endif %}
-          </div>
+                            {% else %}
+                                <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'login' %}">Login</a>
+                            {% endif %}
+                      </div>
+                </div>
+
+           </nav>
+        </div>
     </div>
 
-    <div style="visibility: hidden;">.</div>
-        <button class="navbar-toggler custom-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-   </nav>
-    </div>
-</div>
 
 
 
