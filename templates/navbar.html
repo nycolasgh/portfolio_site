@@ -7,17 +7,15 @@
         <img src="{% static 'images/alto-logo-site.svg' %}" width="150" height="auto" alt="" class="img-fluid ps-3"/>
     </a>
 
-    <div class="d-flex flex-column">
-        {% if request.user.is_authenticated %}
-        <a href="{% url 'logout' %}">Logout</a>
-        <a href="{% url 'profile' user.id %}">Ver Perfil</a>
-        {% else %}
-        <a href="{% url 'login' %}">Login</a>
-        {% endif %}
-    </div>
-
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
+
+        {% if request.user.is_authenticated %}
+        <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'logout' %}">Logout</a>
+        <a class="nav-link" href="{% url 'profile' user.id %}">Ver Perfil</a>
+        {% else %}
+        <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'login' %}">Login</a>
+        {% endif %}
         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
         <a class="nav-link" href="{% url 'home' %}#about">Sobre Nós</a>
         <a class="nav-link" href="{% url 'home' %}#service-section">Serviços</a>
