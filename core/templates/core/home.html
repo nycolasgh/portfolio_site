@@ -18,22 +18,26 @@
 
     </div>
 
-    {# About section #}
-
-    <div id="about">
-        <div id="about-image">
-            <img src="{% static 'images/about-us-astronaut.svg' %}">
+    {#  Recent Works Section  #}
+    <div id="works">
+        <div id="trabalhos-recentes">
+        <h2>Trabalhos Recentes</h2>
         </div>
-
-        <div id="about-title">
-            <h3>Sobre nós</h3>
-            <h4>Trabalhamos com paixão e determinação para entregar resultados excepcionais para nossos clientes.</h4>
-            <p>Somos uma agência de comunicação com uma equipe altamente qualificada e experiente, especializada em ajudar as empresas a alcançar seus objetivos de negócios através da comunicação estratégica. Acreditamos em construir relacionamentos duradouros com nossos clientes e em trabalhar juntos para alcançar seus objetivos.
-                <br><br> Sabemos que a comunicação é a chave para o sucesso de qualquer empresa, por isso trabalhamos de perto com nossos clientes para entender bem suas necessidades e desenvolver soluções personalizadas que atendam às suas metas de forma eficaz.
-            </p>
+        <div class="wrapper">
+            <div id="works-list">
+            {% for work in works %}
+                <div class="work-item">
+                    <a href="{{ work.link }}" target="_blank">
+                        <img src="{{ work.image.url }}" alt="work image">
+                        <div class="overlay">
+                            <h4>{{ work.title }}</h4>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+            </div>
         </div>
     </div>
-
 </div>
 
 {# Services Section #}
@@ -43,7 +47,7 @@
 
         <div id="services">
             {% for service in service %}
-                <div class="accordion service-accord">
+                <div class="accordion service-accord" style="margin: 4px;">
                     <div class="accordion-item">
                             <h3 class="accordion-header service-header">
                                 <button class="accordion-button collapsed service-header" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.counter }}" aria-expanded="false" aria-controls="collapse{{ forloop.counter }}">
@@ -122,24 +126,19 @@
     <a href="#contact" class="btn btn-primary button btn-theme-aquamarine">Bora!</a>
 </div>
 
-{#  Recent Works Section  #}
-<div id="works">
-    <div id="trabalhos-recentes">
-    <h2>Trabalhos Recentes</h2>
+{# About section #}
+
+<div id="about">
+    <div id="about-image">
+        <img src="{% static 'images/about-us-astronaut.svg' %}">
     </div>
-    <div class="wrapper">
-        <div id="works-list">
-        {% for work in works %}
-            <div class="work-item">
-                <a href="{{ work.link }}" target="_blank">
-                    <img src="{{ work.image.url }}" alt="work image">
-                    <div class="overlay">
-                        <h4>{{ work.title }}</h4>
-                    </div>
-                </a>
-            </div>
-        {% endfor %}
-        </div>
+
+    <div id="about-title">
+        <h3>Sobre nós</h3>
+        <h4>Trabalhamos com paixão e determinação para entregar resultados excepcionais para nossos clientes.</h4>
+        <p>Somos uma agência de comunicação com uma equipe altamente qualificada e experiente, especializada em ajudar as empresas a alcançar seus objetivos de negócios através da comunicação estratégica. Acreditamos em construir relacionamentos duradouros com nossos clientes e em trabalhar juntos para alcançar seus objetivos.
+            <br><br> Sabemos que a comunicação é a chave para o sucesso de qualquer empresa, por isso trabalhamos de perto com nossos clientes para entender bem suas necessidades e desenvolver soluções personalizadas que atendam às suas metas de forma eficaz.
+        </p>
     </div>
 </div>
 

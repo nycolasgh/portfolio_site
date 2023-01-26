@@ -126,17 +126,18 @@ html {
     background: rgb(99,17,225);
     background: linear-gradient(145deg, rgba(99,17,225,1) 0%, rgba(214,29,224,1) 83%, rgba(7,224,179,1) 100%);
     justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 #service-section h2 {
-    padding-top: 3rem;
+    margin: 2rem;
     font-weight: 700;
     font-size: 2rem;
     color: white;
 }
 
 #services {
-    margin: 2rem;
     padding-bottom: 2rem;
     width: 80vw;
     display: flex;
@@ -148,16 +149,15 @@ html {
     justify-content: space-around;
     flex-flow: column wrap;
     align-items: center;
-    padding: 0.5rem;
     margin-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     background: rgba(0, 0, 0, 0.05);
 }
 
 #clients h2 {
     font-size: 2rem;
     font-weight: 700;
-    margin: 1rem;
+    margin: 2rem;
     color: var(--primary-purple);
     text-align: center;
     width: auto;
@@ -175,7 +175,7 @@ html {
     display: flex;
     justify-content: center;
     border-radius: 1rem;
-    padding: 4px;
+    padding: 1rem;
     margin: 4px;
     width: 20vw;
     height: 20vh;
@@ -214,7 +214,7 @@ html {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0);
     padding-bottom: 2rem;
     width: auto;
 
@@ -230,7 +230,7 @@ html {
 #trabalhos-recentes h2{
     color: var(--primary-purple);
     font-weight: 700;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 2rem;
 
 }
@@ -337,6 +337,7 @@ html {
 #feedbacks {
     color: var(--primary-purple);
     font-weight: 700;
+    font-size: 2rem;
     margin-top: 1rem;
     text-align: center;
 }
