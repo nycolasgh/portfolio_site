@@ -33,13 +33,24 @@
         z-index: 1;
     }
 
+    #about-title h4 {
+        min-width: 50%;
+    }
+
     #about-title p {
         display: none;
-
     }
 
     #clients #clients-list .client-item {
         width: 40vw;
     }
+
+    .wrapper {
+        height: auto;
+        overflow: auto;
+        width: 90vw;
+}
+
+
 
 }
