@@ -15,16 +15,14 @@
             <a class="nav-link" href="{% url 'home' %}#works">Portfolio</a>
             <a class="nav-link" href="{% url 'home' %}#clients">Clientes</a>
             <a class="nav-link" href="{% url 'home' %}#convite-contato">Contato</a>
-            <div class="d-flex flex-column justify-content-end">
-                {% if request.user.is_authenticated %}
-                    <a class="nav-link" href="{% url 'profile' user.id %}">Ver Perfil</a>
-                    <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'logout' %}">Logout</a>
-
-                {% else %}
-                    <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'login' %}">Login</a>
-                {% endif %}
-            </div>
+          {% if request.user.is_authenticated %}
+            <a class="nav-link" href="{% url 'profile' user.id %}">Ver Perfil</a>
           </div>
+            <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'logout' %}">Logout</a>
+
+          {% else %}
+            <a class="btn btn-primary button btn-theme-aquamarine my-1" href="{% url 'login' %}">Login</a>
+          {% endif %}
     </div>
 
     <div style="display: hidden;">.</div>
