@@ -7,6 +7,15 @@
         <img src="{% static 'images/alto-logo-site.svg' %}" width="150" height="auto" alt="" class="img-fluid ps-3"/>
     </a>
 
+    <div class="d-flex flex-column">
+        {% if request.user.is_authenticated %}
+        <a href="{% url 'logout' %}">Logout</a>
+        <a href="{% url 'profile' user.id %}">Ver Perfil</a>
+        {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        {% endif %}
+    </div>
+
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
@@ -16,15 +25,6 @@
         <a class="nav-link" href="{% url 'home' %}#clients">Clientes</a>
         <a class="nav-link" href="{% url 'home' %}#convite-contato">Contato</a>
       </div>
-    </div>
-
-    <div class="d-flex flex-column">
-        {% if request.user.is_authenticated %}
-        <a href="{% url 'logout' %}">Logout</a>
-        <a href="{% url 'profile' user.id %}">Ver Perfil</a>
-        {% else %}
-        <a href="{% url 'login' %}">Login</a>
-        {% endif %}
     </div>
 
   <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

@@ -31,7 +31,7 @@ html {
     border-bottom: solid 5px var(--details-aquamarine);
 }
 
-.navbar-toggler {
+.custom-toggler{
   border-color: var(--secondary-pink);
 }
 
