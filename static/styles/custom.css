@@ -31,6 +31,10 @@ html {
     border-bottom: solid 5px var(--details-aquamarine);
 }
 
+.navbar-toggler {
+  border-color: var(--secondary-pink);
+}
+
 #bg-container {
     background: rgb(7,224,179);
     background: linear-gradient(59deg, rgba(7,224,179,0.4962359943977591) 0%, rgba(255,255,255,1) 41%);
@@ -93,7 +97,7 @@ html {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: top;
+    align-items: center;
     min-height: 30vh;
     padding: 2rem;
 
@@ -105,7 +109,8 @@ html {
 }
 
 #about-title {
-    padding-left: 1rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
 }
 
 #about-title h3 {
