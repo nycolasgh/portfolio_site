@@ -15,8 +15,9 @@ html {
 
 #header .navbar-toggler .navbar-toggler-icon {
     aspect-ratio: 1 / 1;
-    background-color: white;
+    background-color: transparent;
     border-radius: 5px
+    color: white;
 }
 
 #header .nav-link {
