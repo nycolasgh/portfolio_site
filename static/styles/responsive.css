@@ -17,6 +17,9 @@
 }
 
 @media screen and (max-width: 640px) {
+    #header {
+        padding: 0;
+    }
     .slider #slider-image {
         object-fit: contain;
         min-width: auto;
