@@ -41,7 +41,7 @@ def loginPage(request):
         else:
             messages.error(request, 'Usuário ou senha incorretos.')
 
-    context = {'page':page}
+    context = {'page': page}
     return render(request, 'core/login_register.html', context)
 
 
