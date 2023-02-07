@@ -14,21 +14,22 @@
         width: 100%;
     }
 
+    .slider #slider-image {
+        object-fit: contain;
+        min-width: auto;
+        max-height: 40vh;
+        position: relative;
+        right: 3rem;
+        z-index: 0;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
     #header {
         padding: 0;
     }
-    .slider #slider-image {
-        object-fit: contain;
-        min-width: auto;
-        max-height: 50vh;
-        position: relative;
-        right: 2rem;
-        z-index: 0;
-        transform: scale(0.7);
-    }
+
 
     .slider #slider-text {
         position: relative;
