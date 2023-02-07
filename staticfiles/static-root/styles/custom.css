@@ -93,6 +93,19 @@ html {
     position: relative;
     right: 10rem;
     z-index: 0;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 #about {
@@ -317,7 +330,7 @@ html {
     align-items: center;
     justify-content: center;
     height: auto;
-    margin: 1rem;
+    margin: 1rem 3rem;
     padding: 3rem;
     border-radius: 2rem;
 }
