@@ -40,13 +40,31 @@
     #trabalhos-recentes h2{
         margin-top: 0;
         margin-bottom: 1rem;
+        font-size: 1.6rem;
     }
+
+    #about-title h3 {
+        min-width: 50%;
+        font-size: 1.6rem;
+    }
+
     #about-title h4 {
         min-width: 50%;
+        font-size: 0.8rem;
     }
 
     #about-title p {
         display: none;
+    }
+
+    #service-section h2 {
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+
+    #clients h2 {
+        font-size: 1.6rem;
+        margin: 1rem;
     }
 
     #clients #clients-list .client-item {
@@ -60,12 +78,18 @@
     }
 
     #convite-contato {
-    margin: 1rem 1rem;
-    padding: 2rem;
-
+        margin: 1rem 1rem;
+        padding: 2rem;
     }
 
 
+    #convite-contato h3 {
+        font-size: 1.6rem;
+    }
+
+    #convite-contato p {
+        font-size: 0.8rem;
+    }
 
 
 }

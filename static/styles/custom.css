@@ -222,11 +222,11 @@ html {
 }
 
 .client-item img {
-    width: 80%;
-    height: auto;
+    max-height: 90%;
+    width: 100%;
     object-fit: contain;
     align-self: center;
-    transform: scale(0.8);
+    transform: scale(0.9);
 }
 
 #works{
