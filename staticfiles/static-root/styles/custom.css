@@ -154,6 +154,8 @@ html {
     font-weight: 700;
     font-size: 2rem;
     color: white;
+    min-width: 80%;
+    text-align: center;
 }
 
 #services {
@@ -329,7 +331,7 @@ html {
     justify-content: center;
     height: auto;
     margin: 1rem 3rem;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 2rem;
 }
 
