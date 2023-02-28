@@ -7,8 +7,8 @@ html {
     width: 100%;
     background-color: black;
     transition: background.ease-out 0.2s;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 #header .navbar-collapse {
@@ -51,25 +51,25 @@ html {
         width: auto;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding: 0 5rem;
 }
 
 .slider #slider-text {
     position: relative;
-    left: 3rem;
     z-index: 1;
 }
 
 .slider h1 {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
 .slider h1 span{
     background-color: var(--primary-purple);
-    border-radius: 2rem;
+    border-radius: 4rem;
     border-color: var(--primary-purple);
     border-style: solid;
     border-width: 0.2rem 0.5rem; /* top and bottom, on the sides */
@@ -137,6 +137,10 @@ html {
     font-size: 1rem;
     color: var(--secondary-pink);
     padding-bottom: 1rem;
+}
+
+#about-title p {
+    padding-right: 3rem;
 }
 
 #service-section {
@@ -238,6 +242,7 @@ html {
     background: rgba(0, 0, 0, 0);
     padding-bottom: 2rem;
     width: auto;
+    padding: 0 5rem 2rem 5rem;
 
 }
 
@@ -330,7 +335,7 @@ html {
     align-items: center;
     justify-content: center;
     height: auto;
-    margin: 1rem 3rem;
+    margin: 1rem 5rem;
     padding: 2rem;
     border-radius: 2rem;
 }
@@ -395,10 +400,11 @@ html {
 footer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     background: rgb(99,17,225);
     background: linear-gradient(145deg, rgba(99,17,225,1) 0%, rgba(214,29,224,1) 83%, rgba(7,224,179,1) 100%);
     margin-top: 2rem;
+    padding: 0 4rem;
 }
 
 #footer-infos{

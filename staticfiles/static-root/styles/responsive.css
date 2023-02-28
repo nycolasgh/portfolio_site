@@ -6,6 +6,10 @@
 }
 
 @media screen and (max-width: 991.98px) {
+    #header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     #header .navbar-collapse {
         width: 100%;
     }
@@ -14,27 +18,42 @@
         width: 100%;
     }
 
+    .slider {
+        width: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
     .slider #slider-image {
         object-fit: contain;
         min-width: auto;
         max-height: 40vh;
         position: relative;
-        right: 2rem;
+        right: 6rem;
         z-index: 0;
     }
+
+    footer {
+    padding: 0 2rem;
+    }
+
 
 }
 
 @media screen and (max-width: 640px) {
-    #header {
-        padding: 0;
+        #header {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
 
     .slider #slider-text {
         position: relative;
-        left: 2rem;
         z-index: 1;
+
     }
 
     #trabalhos-recentes h2{
@@ -78,7 +97,7 @@
     }
 
     #convite-contato {
-        margin: 1rem 1rem;
+        margin: 1rem 2rem;
         padding: 2rem 1rem;
     }
 
@@ -89,6 +108,10 @@
 
     #convite-contato p {
         font-size: 0.8rem;
+    }
+
+    footer {
+    padding: 0 1rem;
     }
 
 
