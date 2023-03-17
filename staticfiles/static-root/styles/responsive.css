@@ -45,8 +45,7 @@
     }
 
     .slider h2 {
-        font-size: 3rem;
-        width
+        font-size: 2rem;
     }
 
     .slider h1 {
@@ -70,6 +69,7 @@
     .slider {
         width: auto;
         display: flex;
+        height: 65vh;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: start;
