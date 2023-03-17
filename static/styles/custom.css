@@ -61,13 +61,13 @@ html {
     z-index: 1;
 }
 
-.slider h1 {
+.slider h2 {
     font-weight: 700;
     font-size: 4rem;
     text-transform: uppercase;
 }
 
-.slider h1 span{
+.slider h2 span{
     background-color: var(--primary-purple);
     border-radius: 4rem;
     border-color: var(--primary-purple);
@@ -76,7 +76,7 @@ html {
     color: white;
 }
 
-.slider h3 {
+.slider h1 {
     font-weight: 500;
     font-size: 1rem;
 }

@@ -27,21 +27,31 @@
         padding: 0 2rem;
     }
 
-    .slider h1 {
-
-    font-size: 2rem;
+   .slider #slider-text {
+        position: relative;
+        z-index: 1;
+        white-space: nowrap;
 
     }
-
 
     .slider #slider-image {
         object-fit: contain;
         min-width: auto;
         max-height: 40vh;
         position: relative;
-        right: 4rem;
+        right: 2rem;
         z-index: 0;
+
     }
+
+    .slider h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+
 
     footer {
     padding: 0 2rem;
@@ -60,8 +70,21 @@
     .slider #slider-text {
         position: relative;
         z-index: 1;
+        white-space: nowrap;
 
     }
+
+    .slider #slider-image {
+        object-fit: contain;
+        min-width: auto;
+        max-height: 30vh;
+        position: relative;
+        right: 0;
+        z-index: 0;
+
+    }
+
+
 
     #trabalhos-recentes h2{
         margin-top: 0;
