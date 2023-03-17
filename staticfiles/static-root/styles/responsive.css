@@ -21,7 +21,7 @@
     .slider {
         width: auto;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
         padding: 0 2rem;
@@ -38,7 +38,7 @@
         object-fit: contain;
         min-width: auto;
         max-height: 40vh;
-        position: relative;
+        position: absolute;
         right: 2rem;
         z-index: 0;
 
@@ -46,7 +46,7 @@
 
     .slider h2 {
 
-        font-size: 2rem;
+        font-size: 3rem;
 
     }
 
@@ -71,8 +71,8 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
-        align-items: center;
-        padding: 0 2rem;
+        align-items: start;
+        padding: 4rem 2rem;
     }
 
     .slider #slider-text {
@@ -85,10 +85,10 @@
     .slider #slider-image {
         object-fit: contain;
         min-width: auto;
-        max-height: 20vh;
+        max-height: 30vh;
         position: absolute;
         right: 2rem;
-        bottom: 10rem;
+        bottom: 12rem;
         z-index: 0;
 
     }
