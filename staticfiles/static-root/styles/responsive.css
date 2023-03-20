@@ -96,6 +96,14 @@
         font-size: 1.6rem;
     }
 
+    #about {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: start;
+        padding: 4rem 2rem;
+    }
+
     #about-title h3 {
         min-width: 50%;
         font-size: 1.6rem;
