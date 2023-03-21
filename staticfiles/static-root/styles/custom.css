@@ -283,7 +283,7 @@ html {
 
 #works-list > div {
     height: 40vh;
-    background: red;
+    background: white;
     border-radius: 1rem;
     background-size: cover;
     background-position: center;
@@ -311,7 +311,7 @@ html {
 
 .work-item3 {
     position: relative;
-    grid-column: 2 / 4;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
     background: white;
     transition: all ease-out 0.2s;
@@ -328,7 +328,7 @@ html {
 
 .work-item5 {
     position: relative;
-    grid-column: 1 / 2;
+    grid-column: 2 / 4;
     grid-row: 2 / 3;
     border-radius: 1rem;
     background: white;
@@ -450,6 +450,7 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: start;
     background: rgb(99,17,225);
     background: linear-gradient(145deg, rgba(99,17,225,1) 0%, rgba(214,29,224,1) 83%, rgba(7,224,179,1) 100%);
     margin-top: 2rem;
@@ -471,7 +472,8 @@ footer {
    font-weight: 400;
 }
 
-#footer-social {
+#footer-logo {
    margin: 2rem;
+   width: 10%;
    color: white;
 }
