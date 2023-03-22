@@ -96,6 +96,10 @@
         font-size: 1.6rem;
     }
 
+    #works-list {
+        padding-left: 2rem;
+    }
+
     #portfolio-cta {
         font-size: 2rem;
     }
