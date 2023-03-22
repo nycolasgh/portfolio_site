@@ -117,12 +117,13 @@ html {
 }
 
 #about-image {
-    width: clamp(35vw, 50%, 40vw);
+    width: 20vw;
 }
 
 #about-title {
     padding-left: 1rem;
     padding-right: 1rem;
+    width: 70%;
 }
 
 #about-title h3 {
