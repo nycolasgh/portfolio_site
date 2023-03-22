@@ -117,7 +117,7 @@ html {
 }
 
 #about-image {
-    width: 20vw;
+    width: 25vw;
 }
 
 #about-title {
@@ -136,10 +136,10 @@ html {
     font-weight: 500;
     font-size: 1rem;
     color: var(--secondary-pink);
-    padding-bottom: 1rem;
 }
 
 #about-title p {
+    padding-top: 1rem;
     padding-right: 3rem;
 }
 
