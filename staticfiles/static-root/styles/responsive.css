@@ -96,6 +96,14 @@
         font-size: 1.6rem;
     }
 
+    #portfolio-cta {
+        font-size: 2rem;
+    }
+
+    #portfolio-msg {
+        font-size: 1rem;
+    }
+
     #about {
         display: flex;
         flex-flow: row nowrap;
