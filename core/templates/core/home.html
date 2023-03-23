@@ -24,6 +24,7 @@
         <h2>Trabalhos Recentes</h2>
         </div>
             <div id="works-list">
+
             {% for work in works %}
                 <div class="work-item{{ forloop.counter }} workitem" style="background-image: url({{ work.image.url }});">
                     <a href="{{ work.link }}" target="_blank">
