@@ -1,10 +1,11 @@
 from .base import *
 import dj_database_url
 
+#testeteste commit
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['portfoliosite-production.up.railway.app','www.altoag.com.br','altoag.com.br']
+ALLOWED_HOSTS = ['*']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
