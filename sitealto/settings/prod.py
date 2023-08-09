@@ -3,7 +3,7 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['52.67.4.88/','172.31.14.81']
+ALLOWED_HOSTS = ['52.67.4.88','172.31.14.81']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
