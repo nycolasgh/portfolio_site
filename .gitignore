@@ -1,5 +1,6 @@
 sitealto/settings/local.py
 sitealto/settings/dev.py
 .env
+Procfile
 
 db.sqlite3

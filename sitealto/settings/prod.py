@@ -3,7 +3,7 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['15.228.235.213','172.31.14.81','ec2-15-228-235-213.sa-east-1.compute.amazonaws.com']
+ALLOWED_HOSTS = ['52.67.4.88/','172.31.14.81']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -36,7 +36,7 @@ CLOUDINARY_STORAGE = {
 '''
 
 
-CSRF_TRUSTED_ORIGINS = ["https://portfoliosite-production.up.railway.app","https://www.altoag.com.br","https://altoag.com.br"]
+CSRF_TRUSTED_ORIGINS = ["https://portfoliosite-production.up.railway.app","http://52.67.4.88","https://altoag.com.br"]
 
 # HTTPS settings
 
