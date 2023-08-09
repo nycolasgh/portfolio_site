@@ -3,7 +3,7 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.31.14.81','ec2-15-228-235-213.sa-east-1.compute.amazonaws.com']
+ALLOWED_HOSTS = ['15.228.235.213','172.31.14.81','ec2-15-228-235-213.sa-east-1.compute.amazonaws.com']
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
