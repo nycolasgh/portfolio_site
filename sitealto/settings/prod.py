@@ -36,7 +36,7 @@ CLOUDINARY_STORAGE = {
 '''
 
 
-CSRF_TRUSTED_ORIGINS = ["ec2-18-229-27-18.sa-east-1.compute.amazonaws.com","http://18.229.27.18","https://altoag.com.br"]
+CSRF_TRUSTED_ORIGINS = ["http://ec2-18-229-27-18.sa-east-1.compute.amazonaws.com","http://18.229.27.18","https://altoag.com.br"]
 
 # HTTPS settings
 
